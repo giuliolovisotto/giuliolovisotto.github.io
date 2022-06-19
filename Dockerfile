@@ -11,6 +11,7 @@ RUN echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 RUN gem install jekyll
 RUN gem install bundler -v 1.15
 RUN apt-get -y install git
+RUN bundle install
 
 EXPOSE 4567
 WORKDIR /home
